@@ -11,3 +11,7 @@
  * kommentaaaaaaaaaaar
  *
  */
+
+//Väljastamine
+echo "Hello World!"."<br />"; // Käsu lõpp - ;
+print "valikaine<br />";
