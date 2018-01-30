@@ -28,3 +28,13 @@ echo "Olen ".$eesnimi." ".$perenimi."<br />";
 echo "Sõidan koolist kesklinna bussiga number ".$bussiNumber."<br />";
 echo "Jõuan kesklinna ".$soiduKestvus." tunniga<br />";
 echo "Midagi konstantset? PI = ".NUMBER_PI."<br />";
+// Tingimuslaused
+$ilmValjas = "päike paistab";
+if($ilmValjas == "sajab lund"){
+    echo "Tuleb minna sauna~!<br />";
+} else {
+    echo "Sauna ei lähe, boiiiiiiiiiiiiii<br />";
+}
+// ? operaator . ternary operator
+$ilmValjas = "sajab lund";
+echo ($ilmValjas == "sajab lund") ? "Tuleb minna sauna~!<br />" : "Sauna ei lähe, boiiiiiiiiiiiiii<br />";
