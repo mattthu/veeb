@@ -6,16 +6,8 @@
  * Time: 17:12
  */
 require_once 'funktsioonid.php';
+require 'ab_fnk.php';
 loeVormFailist('aegvorm.html');
-$eesnimi = $_POST["eesnimi"];
-$perenimi = $_POST["perenimi"];
-$aeg = $_POST["paev"].".".$_POST["kuu"].".".$_POST["aasta"];
-#echo $aeg.' ,   '.$eesnimi.'    ,   '.$perenimi;
-echo "Sisestatud nimi:".$eesnimi." ".$perenimi."<br>";
-echo "Sisestatud kuupäev:".$aeg;
-# Andmebaasi saatmiseks
-$servername = "localhost";
-$username = "Saladus";
-$password = "Saladus";
-$dbname = "Pole tehtud";
-echo "<br><br>INSERT INTO nimed (eesnimi, perenimi, aeg) VALUES ('$eesnimi', '$perenimi', '$aeg')";
+uhendus();
+send();
+selectALL();
